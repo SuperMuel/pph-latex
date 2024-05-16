@@ -64,12 +64,12 @@ definition(https://www.semanticscholar.org/paper/6624236a5ab39d57d2463fca646e159
 (https://www.semanticscholar.org/paper/147fde8bd3c092aeb9372c85cedb460d9f22a2ee).
 As AI capabilities expand, any definition may quickly become outdated.
 % TODO : Similarly, when Apple's Siri virtual assistant was first introduced in 2011, it was seen as a groundbreaking AI technology. But today with the advancements of technologies such as chatgpt, it is seen as outdated. 
-For instance, a simple linear regression, which is a statistical method used
-to model the relationship between a dependent variable and one or more
-independent variables, would be considered as AI by some, while others
-would argue that it is just statistics. However, one could argue that all
+For instance, a simple linear regression
+%which is a statistical method used to model the relationship between a dependent variable and one or more independent variables,
+would be considered as AI by some, while others would argue that it is
+just statistics. However, one could argue that all
 artificial intelligence techniques are essentially based on statistics.
-Even the latest revolutionary AIs work by "predicting the next word" based
+Even the latest revolutionary AIs such as ChatGPT work by "predicting the next word" based
 on patterns in large datasets. Lastly, various fields, such as computer
 science, philosophy, and law, approach AI from different perspectives and
 with different goals in mind, leading to a range of definitions that may
@@ -100,7 +100,6 @@ to evolve and expand.
 
 \subsection{Fields of AI}
 
-% add the images/AI_ML_DL.png
 \begin{figure} %TODO : mention this  in text
     \centering
     \includegraphics[width=0.8\textwidth]{images/AI_ML_DL.png}
@@ -160,9 +159,13 @@ speech or understanding natural language. Deep Learning has revolutionized
 the field of AI and has opened up new possibilities for solving complex
 problems.
 
-\subsection{The technologies we will focus on in this report}
+%TODO : explain that deep learning is vast, and that we will focus on specific technologies. (transition to next section)
+
+\subsection{Key Technologies Explored in This Report}
 
 We will not focus on AIs able to distinguish between cats and dogs, or systems that predict the price of Bitcoin. Instead, we will focus on AI technologies that can "understand" and produce human language, and allow engaging conversations between computers and humans.
+
+%TODO : explain why
 
 \subsubsection{Natural Language Processing (NLP)}
 
@@ -181,14 +184,15 @@ and deep neural network-style machine learning methods became widespread in
 NLP, due to their achieving state-of-the-art results in many natural language
 tasks.
 
-The development of large pre-trained language models using neural networks and
-vast amounts of text data has led to significant advancements in
-NLP capabilities in recent years.
-
-
-The development of large pre-trained language models using neural networks and vast amounts of text data has led to significant advancements in NLP capabilities in recent years.
+%TODO : add examples of NLP tasks (translation, summarization, topic modeling, etc.), and where those tasks are used 
+%TODO : add transition
 
 \subsubsection{Large Language Models (LLM)}
+%TODO : find graph of the evolution of LLM, number and sizes
+
+%TODO : make a better introuction by talking about ChatGPT, which was the first popular LLM.
+%TODO explain that there was other LLMs before, but they were not as popular, and that ChatGPT was the first to be widely used by the public.
+
 
 Large Language Models (LLMs) are deep learning models trained on massive
 amounts of text data to understand and generate human language. They can
@@ -199,7 +203,7 @@ developed by the French company Mistral, and many more are available to
 researchers, companies, and the community. Closed-source models are
 developed by companies like OpenAI (GPT-3, GPT-4), Anthropic (Claude),
 and Google (Gemini).
-LLMs range in size from millions to hundreds of billions of parameters.
+LLMs range in size from millions to hundreds of billions of parameters. %TODO : clarify what's a parameter
 Larger models generally have better performance but require more computational
 resources. State-of-the-art LLMs exhibit impressive language understanding
 and generation capabilities across many benchmarks and real-world
@@ -210,30 +214,43 @@ LLMs have various applications, such as chatbots and conversational AI
 (like ChatGPT) that engage in open-ended dialogue, text generation,
 summarization, translation, creative writing assistance, knowledge
 retrieval, and question answering from large knowledge bases.
-However, LLMs have some limitations in the education context. Training
-and running large LLMs is hugely energy-intensive, raising environmental
-concerns. Smaller models are more efficient and can even run on phones.
-LLMs excel at pattern matching and information retrieval but struggle
-with tasks requiring logical reasoning, causal understanding, and domain
-expertise. They can also generate plausible but factually incorrect
-statements (known as "hallucinations"), which is problematic for
-educational applications where accuracy is critical.
 
 \subsubsection{Vision}
 
-More and more LLMs come with vision capabilities, allowing them to handle not just text but also images and even videos. LLMs can perform general-purpose vision tasks such as answering questions about image content, recognizing objects, scenes, and visual concepts, generating detailed, contextual captions and descriptions for images, visual grounding and reasoning (e.g., locating objects mentioned in a query), providing visual explanations and differentiating between similar images/classes, and enabling open-ended visual task instructions via natural language.
+More and more LLMs come with vision capabilities, allowing them to handle not just text but also images and even videos.
+LLMs can perform general-purpose vision tasks such as answering questions about image content,
+recognizing objects, scenes, and visual concepts, generating detailed, contextual captions
+and descriptions for images, visual grounding and reasoning (e.g., locating objects mentioned in a query),
+providing visual explanations and differentiating between
+similar images/classes, and enabling open-ended visual
+task instructions via natural language.
 
-Some examples of vision-capable models include GPT-4 (OpenAI), the Claude 3 family of models (Anthropic), and Grok 1.5 Vision (xAI).
+%TODO : add the famous image (what will happen if we cut the rope of the balloon) 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/gpt4-image-description.png}
+    \caption{Example of a visual reasoning task using GPT-4.}
+    %TODO : add the source (https://globalnews.ca/news/9553331/gpt-4-open-ai-chatgpt/)
+\end{figure}
+
+
+Some examples of vision-capable models include GPT-4 (OpenAI), the Claude 3 family of models (Anthropic), Gemini (Google) and Grok 1.5 Vision (xAI).
 
 \subsubsection{Speech Recognition and Synthesis}
+Speech recognition involves converting spoken language into written text. Previous models were not well-suited for human conversation, requiring exaggerated voice clarity and only recognizing one language at a time. Whisper, an open-source speech recognition model by OpenAI, has significantly improved performance, understanding technical vocabulary, and recognizing multiple languages within a single conversation. These improvements make it particularly useful in educational settings, where diverse linguistic capabilities and technical jargon are common.
 
-Speech recognition involves converting spoken language into written text. Previous models were not well-suited for human conversation, requiring exaggerated voice clarity and only recognizing one language at a time. Whisper, an open-source speech recognition model by OpenAI, significantly improved performance, understanding technical vocabulary and multiple languages in one conversation.
+Speech synthesis has also advanced, with new models capable of simulating emotions and allowing interruptions, enabling more natural, human-like conversations. These advancements support more dynamic and interactive educational tools, enhancing the learning experience by making digital assistants more relatable and effective.
 
-Speech synthesis has also advanced, with new models capable of simulating emotions and allowing interruptions, enabling more natural human-like conversations.
+Combining speech recognition, NLP, and speech synthesis enables real-life conversations with AI, which are faster and more engaging than typing. Example applications include [Pi.ai](https://pi.ai), an empathetic conversational AI assistant that provides factual knowledge and emotional support through open-ended dialogues. Pi.ai learns from interactions and accesses real-time information to engage users in deep, meaningful conversations across a wide range of topics, making it a valuable tool for both educators and students.
 
-Combining speech recognition, NLP, and speech synthesis enables real-life conversations with AI, which are faster and more engaging than typing. Example applications include PI.ai, which helps users better understand their emotions without simulating affection, reducing the risk of emotional dependence (although the AI may sometimes be overly supportive), and ChatGPT voice, which allows fluid conversations, such as practicing job interviews with the AI simulating an employer role.
+When I first wrote this section, a significant limitation of interacting with voice-based large language models was the requirement to convert voice to text before processing it. This process removed emotional nuances like irony, humor, and background noises, and struggled with multiple speakers. Similarly, converting text back to voice for responses made it difficult for AI to express emotions or different tones of voice accurately.
 
-However, the current process of converting voice to text, processing, and converting back to voice removes emotional nuances like irony, humor, and doubt. State-of-the-art solutions are being developed to address this issue.
+However, this limitation was addressed by OpenAI on May 13th, 2024, with the release of the [GPT-4o model](https://openai.com/index/hello-gpt-4o). This new AI model has been trained to understand and generate human voice directly, without needing text as an intermediary. It can understand multiple speakers, background noises, interruptions, and convey emotions and different tones of voice. Moreover, it can "see" the person and their surroundings in real-time, adapting its behavior accordingly.
+
+This new model has been a game changer in the field of conversational AI, opening up new possibilities for human-computer interactions. For instance, it is used in the [Be My Eyes](https://www.bemyeyes.com) application to help blind people in their daily lives by describing what the camera sees in real-time and answering questions. The AI can, for example, warn the user of an incoming taxi, as demonstrated in [this video](https://www.youtube.com/watch?v=KwNUJ69RbwY).
+
+These advancements are revolutionizing educational tools by providing more natural, interactive, and accessible learning experiences. The integration of sophisticated speech recognition and synthesis technologies in AI models enhances the potential for personalized and effective education, catering to diverse learning needs and environments
 
 \subsubsection{Building on LLMs} %TODO : add examples, and clarify the RAG
 
@@ -250,15 +267,32 @@ Retrieval-Augmented Generation (RAG) combines LLMs with external knowledge retri
 ChatGPT achieved unprecedented user growth, becoming the fastest-growing consumer application in history \cite{https://arstechnica.com/information-technology/2023/02/chatgpt-sets-record-for-fastest-growing-user-base-in-history-report-says/}. It surpassed 1 million users within just 5 days of launch and skyrocketed to 100 million monthly active users by January 2023, only two months after its debut \cite{https://meetanshi.com/blog/chatgpt-statistics/} \cite{https://nerdynav.com/chatgpt-statistics/} \cite{https://www.namepepper.com/chatgpt-users}. For comparison, TikTok took 9 months and Instagram about 2.5 years to reach the 100 million user milestone \cite{https://arstechnica.com/information-technology/2023/02/chatgpt-sets-record-for-fastest-growing-user-base-in-history-report-says/}.
 As of August 2023, ChatGPT boasts over 180.5 million users, an 80.5% increase in just 8 months \cite{https://meetanshi.com/blog/chatgpt-statistics/} \cite{https://nerdynav.com/chatgpt-statistics/} \cite{https://www.namepepper.com/chatgpt-users}.
 \subsection{Global Reach and Demographics}
-ChatGPT has a global presence, with users spanning 161 countries \cite{https://meetanshi.com/blog/chatgpt-statistics/}. However, it remains banned in several nations, including China, Russia, Iran, and Venezuela \cite{https://meetanshi.com/blog/chatgpt-statistics/} \cite{https://nerdynav.com/chatgpt-statistics/}.
-The United States accounts for the largest share of users at 46.75%, followed by India at 5.47% \cite{https://nerdynav.com/chatgpt-statistics/}. In terms of demographics, 55.99% of ChatGPT users are male, while 44.01% are female \cite{https://nerdynav.com/chatgpt-statistics/}. But most importantly, the majority of users (62.52%) are young, between the ages of 18 and 34 \cite{https://nerdynav.com/chatgpt-statistics/}.
+ChatGPT has a global presence, with users spanning 161 countries. However, it remains banned in several nations, including China, Russia, Iran, and Venezuela \cite{https://investingchannel.com/article/585154/15-countries-that-banned-chatgpt}.
+The United States accounts for the largest share of users at 46.75\%, followed by India at 5.47\% \cite{https://nerdynav.com/chatgpt-statistics/}. In terms of demographics, 55.99\% of ChatGPT users are male, while 44.01\% are female. But most importantly, the majority of users (62.52\%) are young, between the ages of 18 and 34 \cite{https://nerdynav.com/chatgpt-statistics/}.
 \subsection{News coverage and public attention}
 The impact of AI on education has garnered significant media attention, with numerous articles discussing the potential benefits, risks, and implications for students and teachers \cite{https://www.bbc.com/news/education-67433036} \cite{https://www.tampabay.com/opinion/2024/02/22/artificial-intelligence-education-return-once-feared-calculator-or-new-opportunity/} \cite{https://theweek.com/education/ai-in-schools-machine-learning}. Headlines have highlighted both the revolutionary potential of AI to transform learning and the challenges it poses for academic honesty and traditional educational practices. The topic has sparked widespread public debate about the appropriate role and regulation of AI tools in schools \cite{https://www.tampabay.com/opinion/2024/02/22/artificial-intelligence-education-return-once-feared-calculator-or-new-opportunity/} \cite{https://theweek.com/education/ai-in-schools-machine-learning}.
 \subsection{Fear of Widespread Cheating and Plagiarism}
 One of the primary concerns surrounding ChatGPT's launch was its potential to facilitate cheating and plagiarism among students \cite{https://oai.missouri.edu/chatgpt-artificial-intelligence-and-academic-integrity/} \cite{https://informationmatters.org/2023/02/chatgpt-and-academic-integrity/} \cite{https://www.reddit.com/r/changemyview/comments/123m3xr/cmv_using_chatgpt_for_academic_purposes_is_not_an/}. With its ability to generate high-quality, human-like text based on prompts, educators feared that students would use ChatGPT to complete assignments, essays, and exams without putting in the necessary effort or learning \cite{https://oai.missouri.edu/chatgpt-artificial-intelligence-and-academic-integrity/} \cite{https://www.reddit.com/r/changemyview/comments/123m3xr/cmv_using_chatgpt_for_academic_purposes_is_not_an/}.
-A recent survey revealed that nearly half of students were likely to use AI tools like ChatGPT, while 60% perceived reliance on such tools as cheating \cite{https://oai.missouri.edu/chatgpt-artificial-intelligence-and-academic-integrity/}. The ease of use and accessibility of ChatGPT heightened concerns about the prevalence of academic dishonesty across all levels of education \cite{https://informationmatters.org/2023/02/chatgpt-and-academic-integrity/} \cite{https://www.reddit.com/r/changemyview/comments/123m3xr/cmv_using_chatgpt_for_academic_purposes_is_not_an/}.
+A recent survey revealed that nearly half of students were likely
+to use AI tools like ChatGPT, while 60\% perceived reliance on
+such tools as cheating \cite{https://oai.missouri.edu/chatgpt-artificial-intelligence-and-academic-integrity/}.
+The ease of use and accessibility of ChatGPT heightened concerns
+about the prevalence of academic dishonesty across all levels of
+education \cite{https://informationmatters.org/2023/02/chatgpt-and-academic-integrity/}
+\cite{https://www.reddit.com/r/changemyview/comments/123m3xr/cmv_using_chatgpt_for_academic_purposes_is_not_an/}.
 
-Most cheating statistics are derived from surveys in which students are asked about their recent cheating behavior. However, to accurately interpret these statistics, it is crucial to understand what students consider to be cheating. A Pew Research Center survey of U.S. teens, conducted between September 26 and October 23, 2023, revealed an interesting discrepancy in students' perceptions of AI usage. While approximately 60% of students believe that using ChatGPT to write essays is unacceptable, around 70% consider it acceptable to use the tool for researching new topics. This finding suggests that students are more likely to view AI as an acceptable tool for exploration and learning rather than for completing actual assignments or assessments.
+Most cheating statistics are derived from surveys in which students
+are asked about their recent cheating behavior.
+However, to accurately interpret these statistics, it is crucial
+to understand what students consider to be cheating.
+A Pew Research Center survey of U.S. teens, conducted between
+September and October 2023, revealed an interesting discrepancy
+in students' perceptions of AI usage. While approximately 60\%
+of students believe that using ChatGPT to write essays is unacceptable, around 70\%
+consider it acceptable to use the tool for researching new topics.
+This finding suggests that students are more likely to view AI
+as an acceptable tool for exploration and learning rather than for
+completing actual assignments or assessments.
 
 \begin{figure}
     \centering
@@ -353,7 +387,7 @@ As AI text generators continue to advance, it is clear that AI detection tools w
 need to evolve in tandem to remain effective \cite{https://surferseo.com/blog/how-do-ai-content-detectors-work/}
 \cite{https://contadu.com/ai-detection-tools-the-challenge-of-todays-digital-age/}
 \cite{https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00140-5}.
-This ongoing "arms race" between AI generators and detectors is likely to shape
+This ongoing arms race between AI generators and detectors is likely to shape
 the future of academic integrity and content authenticity in significant ways.
 Educators, institutions, and policymakers will need to stay informed about the
 latest developments in AI technology and adapt their practices accordingly to
@@ -376,7 +410,7 @@ The French government has supported the creation and development of a network of
 
 
 
-\subsubsection{Developing Frameworks and Guidelines}
+\subsubsection{Developing Frameworks and Guidelines} %TODO : might move that in the end
 Governments and international organizations are developing frameworks and guidelines to ensure the safe, ethical, and effective use of AI in education. For example, the Australian Government Department of Education has released the inaugural Australian Framework for Generative Artificial Intelligence in Schools, to be implemented from Term 1 2024 \cite{https://www.educationmattersmag.com.au/federal-government-releases-first-ai-framework-for-schools/}. The framework prioritizes privacy, security, safety, teaching and learning outcomes, human and social wellbeing, transparency, fairness, and accountability \cite{https://www.educationmattersmag.com.au/federal-government-releases-first-ai-framework-for-schools/}.
 UNESCO has also developed policy guidance for leveraging AI in education, emphasizing the need to harness the benefits of AI while mitigating risks \cite{https://www.teachingtomorrow.co.uk/news/artificial-intelligence-in-education-empowering-teachers-and-students}. The guidance covers various aspects, including promoting inclusive and equitable use of AI, developing ethical guidelines, fostering local AI innovations, and building an evidence base through pilot testing and evaluation \cite{https://www.teachingtomorrow.co.uk/news/artificial-intelligence-in-education-empowering-teachers-and-students}.
 As part of its broader national strategy for artificial intelligence (AI), the French government has recognized the importance of integrating AI into the education system. The strategy aims to position France as a global leader in AI research, development, and innovation, with education playing a crucial role \cite{https://www.economie.gouv.fr/strategie-nationale-intelligence-artificielle} \cite{https://www.entreprises.gouv.fr/fr/numerique/enjeux/la-strategie-nationale-pour-l-ia}. In March 2024, the Commission on Artificial Intelligence submitted a report to the President of the Republic containing 25 recommendations to help France capitalize on the AI technological revolution \cite{https://edunumrech.hypotheses.org/11602} \cite{https://www.ac-paris.fr/l-intelligence-artificielle-dans-l-education-130992} \cite{https://www.campusmatin.com/numerique/equipements-systemes-informations/commission-ia-les-recommandations-pour-l-enseignement-superieur-et-la-recherche.html}. These recommendations were based on extensive consultations and aim to guide public authorities in making decisions to position France at the forefront of AI, including in the field of education.
@@ -454,7 +488,7 @@ Remnote makes practicing incredibly easy. Once notes are taken, flashcards are a
 
 The app forces you to write "atomic" flashcards. Instead of writing 1 flashcard on a whole paragraph of a textbook, you will write 10 tiny flashcards that tests you on tiny bit of informations. That way, you can effectively rate your level of retention, so that Remnote can very precisely isolates what you struggle on. Additionaly, since flashcards are tiny, they are more engaging and less discouraging.
 
-The app is designed to be challenging but not too much, so that we aren't bored and but we don't abandon. It uses the same addictive techniques that other apps use, but for the good. For instance, there is a daily goal of flashcards to practice, and the number of consecutive days you achieved that goal is tracked and proudly displayed. That way, you feel motivated to continue achieving this goal to not reset the counter. Notifications are sent so that you can never say that you forgot.  Duolingo use the same techniques.
+The app is designed to be challenging but not too much, so that we aren't bored and but we don't abandon. It uses the same addictive techniques that other apps use, but for the good. For instance, there is a daily goal of flashcards to practice, and the number of consecutive days you achieved that goal is tracked and proudly displayed. That way, you feel motivated to continue achieving this goal to not reset the counter. Notifications are sent so that you can never say that you forgot.  Similar techniques are used in Duolingo and many other apps.
 
 Brilliant incorporates game design principles into their courses, featuring leaderboards, streaks, and interactive problem-solving with funny characters. This makes the learning experience more engaging and reduces anxiety associated with tackling unfamiliar concepts \cite{https://fordhamram.com/2023/04/11/the-complete-brilliant.org-review}.
 
@@ -563,6 +597,8 @@ This reliance on AI tools may lead to a lack of critical thinking and problem-so
 
 Educators worry that the use of ChatGPT could lead to a decline in students' ability to engage in original thought, conduct research, and construct arguments independently \cite{https://www.mdpi.com/2073-431X/12/8/153}. Overreliance on AI assistance may also hinder students' social interaction and collaboration skills, as they may prioritize AI-generated answers over peer discussions and teamwork, leading to reduced collaborative learning.
 
+%TODO : reflect of the similarities with the movie "Her" (2013), where the main character falls in love with an AI assistant
+
 \subsection{AI Accuracy}
 
 Another challenge is the potential for wrong answers and hallucinations from AI systems. Students need to learn how to check information and verify the accuracy of AI-generated content. This highlights the importance of teaching students how to search for information through traditional methods, such as books and the internet.
@@ -594,12 +630,12 @@ The use of AI in education also raises privacy concerns, as student data may be 
 
 \subsection{Potential Impact on the Job Market}
 
-The adoption of AI in education may have consequences for the job market. 
-For example, the demand for tutors might decrease as AI-powered platforms 
-provide 24/7 support, feedback, and interactive learning experiences. 
-Language learning is likely to be one of the most impacted areas, with 
+The adoption of AI in education may have consequences for the job market.
+For example, the demand for tutors might decrease as AI-powered platforms
+provide 24/7 support, feedback, and interactive learning experiences.
+Language learning is likely to be one of the most impacted areas, with
 AI offering features such as pronunciation feedback, engaging discussions,
- automatic assessment, and spaced repetition, often at no cost to the user.
+automatic assessment, and spaced repetition, often at no cost to the user.
 
 %TODO : sources on job losses
 %TODO : talk about writing skills, skills in information searching
