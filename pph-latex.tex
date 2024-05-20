@@ -1,8 +1,6 @@
 \documentclass{article}
 
 
-
-
 % Language setting
 % Replace `english' with e.g. `spanish' to change the document language
 \usepackage[english]{babel}
@@ -36,7 +34,6 @@
     development of creativity and critical thinking skills
     in the AI era.
 \end{abstract}
-% add the ./images/chatgpt_acceptable_usecases.png image:
 
 \newpage
 
@@ -56,12 +53,11 @@ Artificial Intelligence (AI) has become a buzzword in recent years, with its
 applications spanning across various domains, including education. However,
 defining AI is not a straightforward task due to several challenges. Firstly,
 there is a lack of a universally accepted definition of AI across different
-fields and contexts(https://www.semanticscholar.org/paper/6f18cf33eb6e22b1fd665bd24ddf1e9c0509a420)(https://www.semanticscholar.org/paper/147fde8bd3c092aeb9372c85cedb460d9f22a2ee).
+fields and contexts \cite{Eliot2021DifficultiesIL}.
 The concept of AI is complex and multifaceted, making it challenging to arrive
 at a precise, all-encompassing definition. Secondly, the rapidly evolving
 nature of AI technologies makes it difficult to establish a fixed
-definition(https://www.semanticscholar.org/paper/6624236a5ab39d57d2463fca646e15973a5a6a55)
-(https://www.semanticscholar.org/paper/147fde8bd3c092aeb9372c85cedb460d9f22a2ee).
+definition \cite{Tambuskar2022ChallengesAB} \cite{Cooreman2022CriticalRO}.
 As AI capabilities expand, any definition may quickly become outdated.
 % TODO : Similarly, when Apple's Siri virtual assistant was first introduced in 2011, it was seen as a groundbreaking AI technology. But today with the advancements of technologies such as chatgpt, it is seen as outdated. 
 For instance, a simple linear regression
@@ -73,8 +69,7 @@ Even the latest revolutionary AIs such as ChatGPT work by "predicting the next w
 on patterns in large datasets. Lastly, various fields, such as computer
 science, philosophy, and law, approach AI from different perspectives and
 with different goals in mind, leading to a range of definitions that may
-not always align(https://www.semanticscholar.org/paper/d45e5a95b3442afd3028e87edd060fcbacd128dc)
-(https://www.semanticscholar.org/paper/b1c7a9ef833287615fae3324eae044fc76839460).
+not always align \cite{Simonsen2022OpenRO} \cite{Rienties2020DefiningTB}.
 
 \subsubsection{Common definitions}
 
@@ -103,8 +98,7 @@ to evolve and expand.
 \begin{figure} %TODO : mention this  in text
     \centering
     \includegraphics[width=0.8\textwidth]{images/AI_ML_DL.png}
-    \caption{AI vs Machine Learning vs Deep Learning}
-    %TODO : include source (https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/ai-vs-machine-learning-vs-deep-learning)
+    \caption{AI vs Machine Learning vs Deep Learning \cite{simplilearn_ai_ml_dl}}
 \end{figure}
 
 
@@ -230,8 +224,7 @@ task instructions via natural language.
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{images/gpt4-image-description.png}
-    \caption{Example of a visual reasoning task using GPT-4.}
-    %TODO : add the source (https://globalnews.ca/news/9553331/gpt-4-open-ai-chatgpt/)
+    \caption{Example of a visual reasoning task using GPT-4 \cite{globalnews_gpt4}.}
 \end{figure}
 
 
@@ -248,7 +241,7 @@ When I first wrote this section, a significant limitation of interacting with vo
 
 However, this limitation was addressed by OpenAI on May 13th, 2024, with the release of the [GPT-4o model](https://openai.com/index/hello-gpt-4o). This new AI model has been trained to understand and generate human voice directly, without needing text as an intermediary. It can understand multiple speakers, background noises, interruptions, and convey emotions and different tones of voice. Moreover, it can "see" the person and their surroundings in real-time, adapting its behavior accordingly.
 
-This new model has been a game changer in the field of conversational AI, opening up new possibilities for human-computer interactions. For instance, it is used in the [Be My Eyes](https://www.bemyeyes.com) application to help blind people in their daily lives by describing what the camera sees in real-time and answering questions. The AI can, for example, warn the user of an incoming taxi, as demonstrated in [this video](https://www.youtube.com/watch?v=KwNUJ69RbwY).
+This new model has been a game changer in the field of conversational AI, opening up new possibilities for human-computer interactions. For instance, it is used in the [Be My Eyes](https://www.bemyeyes.com) application to help blind people in their daily lives by describing what the camera sees in real-time and answering questions. The AI can, for example, warn the user of an incoming taxi, as demonstrated in \cite{youtube_bemyeyes_gpt4o}.
 
 These advancements are revolutionizing educational tools by providing more natural, interactive, and accessible learning experiences. The integration of sophisticated speech recognition and synthesis technologies in AI models enhances the potential for personalized and effective education, catering to diverse learning needs and environments
 
@@ -264,22 +257,62 @@ Retrieval-Augmented Generation (RAG) combines LLMs with external knowledge retri
 \newpage
 \section{The Growing Influence of AI in Education}
 \subsection{Record-Breaking User Growth}
-ChatGPT achieved unprecedented user growth, becoming the fastest-growing consumer application in history \cite{https://arstechnica.com/information-technology/2023/02/chatgpt-sets-record-for-fastest-growing-user-base-in-history-report-says/}. It surpassed 1 million users within just 5 days of launch and skyrocketed to 100 million monthly active users by January 2023, only two months after its debut \cite{https://meetanshi.com/blog/chatgpt-statistics/} \cite{https://nerdynav.com/chatgpt-statistics/} \cite{https://www.namepepper.com/chatgpt-users}. For comparison, TikTok took 9 months and Instagram about 2.5 years to reach the 100 million user milestone \cite{https://arstechnica.com/information-technology/2023/02/chatgpt-sets-record-for-fastest-growing-user-base-in-history-report-says/}.
-As of August 2023, ChatGPT boasts over 180.5 million users, an 80.5% increase in just 8 months \cite{https://meetanshi.com/blog/chatgpt-statistics/} \cite{https://nerdynav.com/chatgpt-statistics/} \cite{https://www.namepepper.com/chatgpt-users}.
+ChatGPT achieved unprecedented user growth, becoming
+the fastest-growing consumer application in history \cite{arstechnica_chatgpt_growth}.
+It surpassed 1 million users within just 5 days of launch and skyrocketed to 100
+million monthly active users by January 2023, only two months after its debut.
+For comparison, TikTok took 9 months and Instagram about 2.5 years to reach the 100 million user milestone
+\cite{arstechnica_chatgpt_growth}.
+
+As of August 2023, ChatGPT boasts over 180.5 million users, an 80.5\% increase in just 8 months
+\cite{meetanshi2023chatgpt} \cite{nerdynav_chatgpt_stats} \cite{namepepper_chatgpt_users}.
+
+
 \subsection{Global Reach and Demographics}
-ChatGPT has a global presence, with users spanning 161 countries. However, it remains banned in several nations, including China, Russia, Iran, and Venezuela \cite{https://investingchannel.com/article/585154/15-countries-that-banned-chatgpt}.
-The United States accounts for the largest share of users at 46.75\%, followed by India at 5.47\% \cite{https://nerdynav.com/chatgpt-statistics/}. In terms of demographics, 55.99\% of ChatGPT users are male, while 44.01\% are female. But most importantly, the majority of users (62.52\%) are young, between the ages of 18 and 34 \cite{https://nerdynav.com/chatgpt-statistics/}.
+ChatGPT has a global presence, with users spanning 161
+countries. However, it remains banned in several nations,
+including China, Russia, Iran, and Venezuela
+\cite{investingchannel_chatgpt_bans}.
+The United States accounts for the largest share of users
+at 46.75\%, followed by India at 5.47\%
+\cite{nerdynav_chatgpt_stats}.
+In terms of demographics, 55.99\% of ChatGPT users
+are male, while 44.01\% are female. But most importantly,
+the majority of users (62.52\%) are young,
+between the ages of 18 and 34 \cite{nerdynav_chatgpt_stats}.
+
 \subsection{News coverage and public attention}
-The impact of AI on education has garnered significant media attention, with numerous articles discussing the potential benefits, risks, and implications for students and teachers \cite{https://www.bbc.com/news/education-67433036} \cite{https://www.tampabay.com/opinion/2024/02/22/artificial-intelligence-education-return-once-feared-calculator-or-new-opportunity/} \cite{https://theweek.com/education/ai-in-schools-machine-learning}. Headlines have highlighted both the revolutionary potential of AI to transform learning and the challenges it poses for academic honesty and traditional educational practices. The topic has sparked widespread public debate about the appropriate role and regulation of AI tools in schools \cite{https://www.tampabay.com/opinion/2024/02/22/artificial-intelligence-education-return-once-feared-calculator-or-new-opportunity/} \cite{https://theweek.com/education/ai-in-schools-machine-learning}.
+The impact of AI on education has garnered significant media attention,
+with numerous articles discussing the potential benefits, risks,
+and implications for students and teachers
+\cite{bbc2023ai_education} \cite{tampabay2024ai_education} \cite{theweek2024ai_schools}.
+Headlines have highlighted both the revolutionary potential of AI
+to transform learning and the challenges it poses for academic
+honesty and traditional educational practices. The topic has
+sparked widespread public debate about the appropriate role and
+regulation of AI tools in schools
+\cite{tampabay2024ai_education}
+\cite{theweek2024ai_schools}.
+
 \subsection{Fear of Widespread Cheating and Plagiarism}
-One of the primary concerns surrounding ChatGPT's launch was its potential to facilitate cheating and plagiarism among students \cite{https://oai.missouri.edu/chatgpt-artificial-intelligence-and-academic-integrity/} \cite{https://informationmatters.org/2023/02/chatgpt-and-academic-integrity/} \cite{https://www.reddit.com/r/changemyview/comments/123m3xr/cmv_using_chatgpt_for_academic_purposes_is_not_an/}. With its ability to generate high-quality, human-like text based on prompts, educators feared that students would use ChatGPT to complete assignments, essays, and exams without putting in the necessary effort or learning \cite{https://oai.missouri.edu/chatgpt-artificial-intelligence-and-academic-integrity/} \cite{https://www.reddit.com/r/changemyview/comments/123m3xr/cmv_using_chatgpt_for_academic_purposes_is_not_an/}.
+One of the primary concerns surrounding ChatGPT's launch
+was its potential to facilitate cheating and plagiarism among students
+\cite{missouri2023chatgpt} \cite{shiri2023chatgpt} \cite{reddit_chatgpt_academic_purposes}.
+
+
+With its ability to generate high-quality, human-like text
+based on prompts, educators feared that students would use
+ChatGPT to complete assignments, essays, and exams without
+putting in the necessary effort or learning
+\cite{missouri2023chatgpt} \cite{reddit_chatgpt_academic_purposes}
+\cite{theweek_ai_schools}.
 A recent survey revealed that nearly half of students were likely
 to use AI tools like ChatGPT, while 60\% perceived reliance on
-such tools as cheating \cite{https://oai.missouri.edu/chatgpt-artificial-intelligence-and-academic-integrity/}.
+such tools as cheating \cite{missouri2023chatgpt} .
+
 The ease of use and accessibility of ChatGPT heightened concerns
 about the prevalence of academic dishonesty across all levels of
-education \cite{https://informationmatters.org/2023/02/chatgpt-and-academic-integrity/}
-\cite{https://www.reddit.com/r/changemyview/comments/123m3xr/cmv_using_chatgpt_for_academic_purposes_is_not_an/}.
+education \cite{shiri2023chatgpt}\cite{reddit_chatgpt_academic_purposes}.
 
 Most cheating statistics are derived from surveys in which students
 are asked about their recent cheating behavior.
@@ -297,33 +330,90 @@ completing actual assignments or assessments.
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{images/chatgpt_acceptable_usecases.png}
-    \caption{Pew Research Center survey on AI use in education}
-    %TODO : add the source (https://www.nytimes.com/2023/12/13/technology/chatbot-cheating-schools-students.html)
+    \caption{Pew Research Center survey on AI use in education \cite{nytimes_chatbot_cheating}}
     %TODO : better position in the text
 \end{figure}
 
 \subsection{Bans and Restrictions in Schools}
-In response to the potential for widespread cheating, several large public school districts, including New York City, Los Angeles, Seattle, and Baltimore, swiftly banned access to ChatGPT on school devices and networks \cite{https://oai.missouri.edu/chatgpt-artificial-intelligence-and-academic-integrity/} \cite{https://www.reddit.com/r/changemyview/comments/123m3xr/cmv_using_chatgpt_for_academic_purposes_is_not_an/}. These bans aimed to prevent students from misusing the tool and to uphold academic integrity standards \cite{https://oai.missouri.edu/chatgpt-artificial-intelligence-and-academic-integrity/}.
-However, the effectiveness of such bans remains questionable, as students can still access ChatGPT on personal devices outside of school networks \cite{https://www.reddit.com/r/changemyview/comments/123m3xr/cmv_using_chatgpt_for_academic_purposes_is_not_an/}. The bans also sparked debates about the role of AI in education and the need for schools to adapt to emerging technologies \cite{https://oai.missouri.edu/chatgpt-artificial-intelligence-and-academic-integrity/} \cite{https://www.reddit.com/r/changemyview/comments/123m3xr/cmv_using_chatgpt_for_academic_purposes_is_not_an/}.
-Recent research from Stanford University suggests these cheating fears may have been overblown, as overall cheating rates in high schools have not significantly increased despite the growing use of AI tools \cite{https://www.nytimes.com/2023/12/13/technology/chatbot-cheating-schools-students.html}.
+In response to the potential for widespread cheating,
+several large public school districts, including New York City,
+Los Angeles, Seattle, and Baltimore, swiftly banned access to
+ChatGPT on school devices and networks.
+However, the effectiveness of such bans remains questionable,
+as students can still access ChatGPT on personal devices outside
+of school networks.
+The bans also sparked debates about the role of AI
+in education and the need for schools to adapt to emerging
+technologies
+\cite{missouri2023chatgpt} \cite{reddit_chatgpt_academic_purposes}.
+
+Recent research from Stanford University suggests these cheating fears
+may have been overblown, as overall cheating rates in high schools have
+not significantly increased despite the growing use of AI tools
+\cite{nytimes_chatbot_cheating}.
+
 \subsection{Emergence of AI Detection Tools}
-In response of the cheating concerns, various AI detection tools have been developed to help identify content that has been partially or wholly generated by AI \cite{https://kb.iu.edu/d/bimt}. These tools are intended for use by educators, publishers, recruiters, and others who want to ensure the originality and authenticity of written content. Exemples are Originality.ai \cite{https://originality.ai/}, copyleaks.com \cite{https://copyleaks.com}, quillbot.com \cite{https://quillbot.com/}, gptzero.me \cite{https://gptzero.me/}, or a French tool compilatio.net \cite{https://www.compilatio.net/ia-detecteur-info}. However, the effectiveness and reliability of these tools have been the subject of much debate \cite{https://www.scribbr.com/ai-tools/how-do-ai-detectors-work/} \cite{https://contadu.com/ai-detection-tools-the-challenge-of-todays-digital-age/} \cite{https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00140-5}.
+In response of the cheating concerns, various AI detection tools
+have been developed to help identify content that has been partially
+or wholly generated by AI.
+These tools are intended for use by educators, publishers,
+recruiters, and others who want to ensure the originality
+and authenticity of written content.
+Exemples are \cite[Originality.ai]{originality_ai},
+\cite[Copyleaks]{copyleaks}, \cite[Quillbot]{quillbot},
+\cite[GPTZero]{gptzero}, or \cite[Compilatio]{compilatio_ia_detecteur}.
+
+However, the effectiveness and reliability of these tools
+have been the subject of much debate
+\cite{scribbr_ai_detectors} \cite{contadu_ai_detection} \cite{biomedcentral_ai_detection}.
+
+
+
 \subsubsection{How AI Detection Tools Work}
-AI detection tools rely on machine learning (ML) and natural language processing (NLP) techniques to analyze and classify text as either human-written or AI-generated \cite{https://surferseo.com/blog/how-do-ai-content-detectors-work/} \cite{https://contadu.com/ai-detection-tools-the-challenge-of-todays-digital-age/}. They are often built using language models similar to those used in the AI writing tools they aim to detect \cite{https://www.scribbr.com/ai-tools/how-do-ai-detectors-work/}. These tools work by examining various linguistic patterns, sentence structures, and other characteristics of the text \cite{https://surferseo.com/blog/how-do-ai-content-detectors-work/} \cite{https://contadu.com/ai-detection-tools-the-challenge-of-todays-digital-age/}. They compare the input text to large datasets of known AI-generated and human-written content to determine the likelihood that the text was created by an AI \cite{https://www.scribbr.com/ai-tools/how-do-ai-detectors-work/} \cite{https://contadu.com/ai-detection-tools-the-challenge-of-todays-digital-age/}. Some common techniques used by AI detection tools include \cite{https://surferseo.com/blog/how-do-ai-content-detectors-work/} \cite{https://contadu.com/ai-detection-tools-the-challenge-of-todays-digital-age/}:
+AI detection tools rely on machine learning (ML)
+and natural language processing (NLP) techniques to analyze and
+classify text as either human-written or AI-generated.
+They are often built using language models similar to those used
+in the AI writing tools they aim to detect.
+These tools work by examining various linguistic patterns, sentence structures,
+and other characteristics of the text
+\cite{surferseo_ai_content_detectors}
+\cite{scribbr_ai_detectors}
+\cite{contadu_ai_detection}.
+
+They compare the input text to large datasets of known AI-generated
+and human-written content to determine the likelihood that the text
+was created by an AI.
+Some common techniques used by AI detection tools include
+\cite{surferseo_ai_content_detectors}
+\cite{contadu_ai_detection}:
+
 \begin{itemize}
     \item Perplexity: Measuring how well a language model predicts the next word in a sequence
     \item Burstiness: Analyzing variations in sentence structure and length
     \item Semantic techniques: Topic modeling, sentiment analysis, and consistency assessment
 \end{itemize}
 \subsubsection{Challenges and Limitations}
-Despite the development of various AI detection tools, their effectiveness and reliability remain questionable \cite{https://www.scribbr.com/ai-tools/how-do-ai-detectors-work/} \cite{https://contadu.com/ai-detection-tools-the-challenge-of-todays-digital-age/} \cite{https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00140-5}. Several studies have shown that these tools often struggle to accurately classify text, particularly as AI text generators become more advanced \cite{https://contadu.com/ai-detection-tools-the-challenge-of-todays-digital-age/} \cite{https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00140-5}. Some key challenges and limitations include:
+Despite the development of various AI detection tools,
+their effectiveness and reliability remain questionable.
+
+Several studies have shown that these tools often struggle to accurately classify text,
+particularly as AI text generators become more advanced
+\cite{scribbr_ai_detectors}
+\cite{contadu_ai_detection}
+\cite{biomedcentral_ai_detection}.
+
+Some key challenges and limitations include:
 \begin{itemize}
-    \item High rates of false positives and false negatives \cite{https://www.scribbr.com/ai-tools/how-do-ai-detectors-work/} \cite{https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00140-5} \cite{https://kb.iu.edu/d/bimt}
-    \item Difficulty keeping pace with rapidly evolving AI technologies \cite{https://surferseo.com/blog/how-do-ai-content-detectors-work/} \cite{https://contadu.com/ai-detection-tools-the-challenge-of-todays-digital-age/}
-    \item Inconsistent performance across different AI models and generators \cite{https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00140-5}
-    \item Reduced effectiveness when faced with obfuscation techniques like manual editing or machine paraphrasing \cite{https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00146-z}
+    \item High rates of false positives and false negatives \cite{scribbr_ai_detectors} \cite{biomedcentral_ai_detection} \cite{https://kb.iu.edu/d/bimt}
+    \item Difficulty keeping pace with rapidly evolving AI technologies \cite{surferseo_ai_content_detectors} \cite{contadu_ai_detection}
+    \item Inconsistent performance across different AI models and generators \cite{biomedcentral_ai_detection}
+    \item Reduced effectiveness when faced with obfuscation techniques like manual editing or machine paraphrasing \cite{biomedcentral_ai_detection_variation}
 \end{itemize}
-Additionally, the results provided by AI detection tools can be difficult for average users to interpret, with some tools providing complex statistical information or highlighting text without clear explanations \cite{https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00146-z}.
+Additionally, the results provided by AI detection tools can be difficult
+for average users to interpret, with some tools providing complex statistical
+information or highlighting text without clear explanations
+\cite{biomedcentral_ai_detection_variation}.
 
 \subsubsection{An arm race}
 As AI detection tools become more prevalent, users and students are employing various strategies to evade
@@ -371,22 +461,22 @@ to undermine their reliability and persuade schools not to trust the tools \cite
 The development of AI detection tools has significant implications for academia
 and beyond. Educators are grappling with how to adapt courses and assessments
 to the AI era while maintaining academic integrity
-\cite{https://www.scribbr.com/ai-tools/how-do-ai-detectors-work/}
+\cite{scribbr_ai_detectors}
 \cite{https://kb.iu.edu/d/bimt}. Publishers and content creators are
 also exploring ways to ensure the originality of their content
-\cite{https://www.scribbr.com/ai-tools/how-do-ai-detectors-work/}.
+\cite{scribbr_ai_detectors}.
 However, the current limitations of AI detection tools suggest that they
 should be used with caution and not relied upon as the sole means of
-identifying AI-generated content \cite{https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00146-z}
-\cite{https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00140-5}
+identifying AI-generated content \cite{biomedcentral_ai_detection_variation}
+\cite{biomedcentral_ai_detection}
 \cite{https://kb.iu.edu/d/bimt}. Experts emphasize the importance of
 combining automated detection with human review and other methods to ensure
-the accuracy and fairness of the results \cite{https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00146-z}
-\cite{https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00140-5}.
+the accuracy and fairness of the results \cite{biomedcentral_ai_detection_variation}
+\cite{biomedcentral_ai_detection}.
 As AI text generators continue to advance, it is clear that AI detection tools will
-need to evolve in tandem to remain effective \cite{https://surferseo.com/blog/how-do-ai-content-detectors-work/}
-\cite{https://contadu.com/ai-detection-tools-the-challenge-of-todays-digital-age/}
-\cite{https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00140-5}.
+need to evolve in tandem to remain effective \cite{surferseo_ai_content_detectors}
+\cite{contadu_ai_detection}
+\cite{biomedcentral_ai_detection}.
 This ongoing arms race between AI generators and detectors is likely to shape
 the future of academic integrity and content authenticity in significant ways.
 Educators, institutions, and policymakers will need to stay informed about the
@@ -617,7 +707,8 @@ Students may become less inclined to participate in collaborative activities tha
 
 \subsection{Inequalities in Access to AI Technologies}
 
-The accessibility of AI technologies in education raises significant concerns about equity and fairness. While many AI tools, such as ChatGPT, are available for free, the most powerful and advanced AI systems often require subscriptions, creating an uneven playing field among students. Premium chatbots like "Claude 3 Opus," "ChatGPT Plus," and “Perplexity Pro,” which cost around \$20 a month, offer advanced features that free versions do not, putting students who can afford these tools at a significant advantage.
+The accessibility of AI technologies in education raises significant concerns about equity and fairness. While many AI tools, such as ChatGPT, are available for free, the most powerful and advanced AI systems often require subscriptions, creating an uneven playing field among students. Premium chatbots like "Claude 3 Opus," "ChatGPT Plus," and “Perplexity Pro,” which cost around \$20 a month, %TODO : reference to prices
+offer advanced features that free versions do not, putting students who can afford these tools at a significant advantage.
 
 This disparity is particularly evident in the context of exams and assignments. Traditional exam formats, when combined with the capabilities of premium AIs, can give unfair advantages to students with access to these advanced tools. Therefore, educators must reconsider and redesign assessment methods to ensure fairness in the AI era.
 
