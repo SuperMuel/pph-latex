@@ -95,7 +95,7 @@ to evolve and expand.
 
 \subsection{Fields of AI}
 
-\begin{figure} %TODO : mention this  in text
+\begin{figure}[h] %TODO : mention this  in text
     \centering
     \includegraphics[width=0.8\textwidth]{images/AI_ML_DL.png}
     \caption{AI vs Machine Learning vs Deep Learning \cite{simplilearn_ai_ml_dl}}
@@ -166,7 +166,7 @@ We will not focus on AIs able to distinguish between cats and dogs, or systems t
 Natural Language Processing (NLP) is an interdisciplinary subfield
 of computer science and information retrieval concerned with giving
 computers the ability to understand, interpret, and manipulate human
-language . The goal is a computer capable of "understanding"
+language. The goal is a computer capable of "understanding"
 the contents of documents, including the contextual nuances of the
 language within them.
 
@@ -184,72 +184,164 @@ tasks.
 \subsubsection{Large Language Models (LLM)}
 %TODO : find graph of the evolution of LLM, number and sizes
 
-%TODO : make a better introuction by talking about ChatGPT, which was the first popular LLM.
-%TODO explain that there was other LLMs before, but they were not as popular, and that ChatGPT was the first to be widely used by the public.
 
 
-Large Language Models (LLMs) are deep learning models trained on massive
-amounts of text data to understand and generate human language. They can
-perform a wide range of NLP tasks without requiring task-specific training data.
-There are a large number of LLMs available, both open-source and closed-source.
-Open-source models like Llama (developed by Meta), the "Mistral" models
-developed by the French company Mistral, and many more are available to
-researchers, companies, and the community. Closed-source models are
-developed by companies like OpenAI (GPT-3, GPT-4), Anthropic (Claude),
-and Google (Gemini).
-LLMs range in size from millions to hundreds of billions of parameters. %TODO : clarify what's a parameter
-Larger models generally have better performance but require more computational
-resources. State-of-the-art LLMs exhibit impressive language understanding
-and generation capabilities across many benchmarks and real-world
-applications. However, LLMs have a limited context window, typically
-a few pages of text, limiting their ability to process very long documents
-or maintain long-term memory.
-LLMs have various applications, such as chatbots and conversational AI
-(like ChatGPT) that engage in open-ended dialogue, text generation,
-summarization, translation, creative writing assistance, knowledge
-retrieval, and question answering from large knowledge bases.
+Large Language Models (LLMs) represent a significant advancement
+in the field of natural language processing (NLP).
+These models are deep learning algorithms trained on extensive
+datasets to understand and generate human language.
+Among these models, ChatGPT, developed by OpenAI, stands
+out as the first LLM to achieve widespread public recognition and usage.
+Launched in November 2022, ChatGPT demonstrated the potential of
+LLMs to engage in coherent and contextually relevant conversations,
+making the technology accessible and practical for everyday users.
+
+While ChatGPT became a household name, it was not the first LLM ever created.
+Earlier models, though technically advanced, did not gain the same
+level of popularity or usage due to various factors, including
+accessibility and practical application. The success of ChatGPT highlighted
+the capabilities of LLMs to a broader audience, catalyzing interest
+and development in this technology.
+
+Today, a variety of LLMs exist, both open-source and closed-source.
+Open-source models, such as LLaMA developed by Meta and the "Mistral"
+models from the French company Mistral, are accessible to researchers,
+companies, and the broader community. These models encourage
+collaboration and innovation by allowing a wide range of users
+to experiment and build upon the existing technology. On the other hand,
+closed-source models like OpenAI's GPT-3 and GPT-4, Anthropic's Claude,
+and Google's Gemini are proprietary, often providing advanced
+capabilities and support for commercial applications.
+
+LLMs are versatile tools capable of performing numerous NLP
+tasks without the need for task-specific training data.
+They excel in various applications, including chatbots and
+conversational AI (such as ChatGPT) that can engage
+in open-ended dialogue, text generation, summarization,
+translation, creative writing assistance, knowledge retrieval,
+and question answering from large knowledge bases.
+The impact of LLMs on these applications is profound,
+offering enhanced performance and new possibilities across many domains.
+
+In summary, the development and success of ChatGPT marked
+a turning point for LLMs, demonstrating their potential
+to a wide audience and sparking further advancements in the field.
+As the technology continues to evolve, both open-source and closed-source
+LLMs play a crucial role in driving innovation and expanding the applications
+of artificial intelligence in understanding and generating human language.
+
 
 \subsubsection{Vision}
 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/gpt4-image-description.png}
+    \caption{Example of a visual reasoning task using GPT-4 \cite{globalnews_gpt4}.}
+    \label{fig:vision_task_example}
+\end{figure}
+
 More and more LLMs come with vision capabilities, allowing them to handle not just text but also images and even videos.
-LLMs can perform general-purpose vision tasks such as answering questions about image content,
+LLMs can perform general-purpose vision tasks such as answering questions about image content %TODO reference figure 
+(Figure \ref{fig:vision_task_example}),
 recognizing objects, scenes, and visual concepts, generating detailed, contextual captions
 and descriptions for images, visual grounding and reasoning (e.g., locating objects mentioned in a query),
 providing visual explanations and differentiating between
 similar images/classes, and enabling open-ended visual
 task instructions via natural language.
 
-%TODO : add the famous image (what will happen if we cut the rope of the balloon) 
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.8\textwidth]{images/gpt4-image-description.png}
-    \caption{Example of a visual reasoning task using GPT-4 \cite{globalnews_gpt4}.}
-\end{figure}
-
-
 Some examples of vision-capable models include GPT-4 (OpenAI), the Claude 3 family of models (Anthropic), Gemini (Google) and Grok 1.5 Vision (xAI).
 
 \subsubsection{Speech Recognition and Synthesis}
-Speech recognition involves converting spoken language into written text. Previous models were not well-suited for human conversation, requiring exaggerated voice clarity and only recognizing one language at a time. Whisper, an open-source speech recognition model by OpenAI, has significantly improved performance, understanding technical vocabulary, and recognizing multiple languages within a single conversation. These improvements make it particularly useful in educational settings, where diverse linguistic capabilities and technical jargon are common.
+Speech recognition involves converting spoken language into written text.
+Previous models were not well-suited for human conversation,
+requiring exaggerated voice clarity and only recognizing one
+language at a time. Whisper \cite{openai2024whisper},
+an open-source speech recognition model by OpenAI,
+has significantly improved performance, understanding
+technical vocabulary, and recognizing multiple languages
+within a single conversation. These improvements make it
+particularly useful in educational settings, where diverse linguistic
+capabilities and technical jargon are common.
 
-Speech synthesis has also advanced, with new models capable of simulating emotions and allowing interruptions, enabling more natural, human-like conversations. These advancements support more dynamic and interactive educational tools, enhancing the learning experience by making digital assistants more relatable and effective.
+Speech synthesis has also advanced, with new models capable
+of simulating emotions and allowing interruptions, enabling
+more natural, human-like conversations. These advancements
+support more dynamic and interactive educational tools,
+enhancing the learning experience by making digital assistants
+more relatable and effective.
 
-Combining speech recognition, NLP, and speech synthesis enables real-life conversations with AI, which are faster and more engaging than typing. Example applications include [Pi.ai](https://pi.ai), an empathetic conversational AI assistant that provides factual knowledge and emotional support through open-ended dialogues. Pi.ai learns from interactions and accesses real-time information to engage users in deep, meaningful conversations across a wide range of topics, making it a valuable tool for both educators and students.
+Combining speech recognition, NLP, and speech synthesis
+enables real-life conversations with AI, which are faster
+and more engaging than typing. Example applications include \cite[Pi.ai]{pi_ai},
+an empathetic conversational AI assistant that provides factual knowledge
+and emotional support through open-ended dialogues.
+Pi.ai learns from interactions and accesses real-time
+information to engage users in deep, meaningful conversations across
+a wide range of topics, making it a valuable tool
+for both educators and students.
 
-When I first wrote this section, a significant limitation of interacting with voice-based large language models was the requirement to convert voice to text before processing it. This process removed emotional nuances like irony, humor, and background noises, and struggled with multiple speakers. Similarly, converting text back to voice for responses made it difficult for AI to express emotions or different tones of voice accurately.
+When I first wrote this section, a significant limitation
+of interacting with voice-based large language models
+was the requirement to convert voice to text before
+processing it. This process removed emotional nuances like irony,
+humor, and background noises, and struggled with multiple speakers.
+Similarly, converting text back to voice for responses made it
+difficult for AI to express emotions or different tones of voice accurately.
 
-However, this limitation was addressed by OpenAI on May 13th, 2024, with the release of the [GPT-4o model](https://openai.com/index/hello-gpt-4o). This new AI model has been trained to understand and generate human voice directly, without needing text as an intermediary. It can understand multiple speakers, background noises, interruptions, and convey emotions and different tones of voice. Moreover, it can "see" the person and their surroundings in real-time, adapting its behavior accordingly.
+However, this limitation was addressed by OpenAI on May 13th, 2024,
+with the release of the GPT-4o \cite{openai_gpt4o}. This
+new AI model has been trained to understand and generate
+human voice directly, without needing text as an intermediary.
+It can understand multiple speakers, background noises, interruptions,
+and convey emotions and different tones of voice.
+Moreover, it can "see" the person and their surroundings
+in real-time, adapting its behavior accordingly.
 
-This new model has been a game changer in the field of conversational AI, opening up new possibilities for human-computer interactions. For instance, it is used in the [Be My Eyes](https://www.bemyeyes.com) application to help blind people in their daily lives by describing what the camera sees in real-time and answering questions. The AI can, for example, warn the user of an incoming taxi, as demonstrated in \cite{youtube_bemyeyes_gpt4o}.
+This new model has been a game changer in the field of conversational
+AI, opening up new possibilities for human-computer interactions.
+For instance, it is used in the \textit{Be My Eyes} \cite{bemyeyes} application to
+help blind people in their daily lives by describing what
+the camera sees in real-time and answering questions.
+The AI can, for example, warn the user of an incoming taxi,
+as demonstrated in \cite{youtube_bemyeyes_gpt4o}.
 
 These advancements are revolutionizing educational tools by providing more natural, interactive, and accessible learning experiences. The integration of sophisticated speech recognition and synthesis technologies in AI models enhances the potential for personalized and effective education, catering to diverse learning needs and environments
 
-\subsubsection{Building on LLMs} %TODO : add examples, and clarify the RAG
 
-Beyond chatbots in web browsers, LLMs can be integrated into a wide range of tasks. LLMs are steerable and can act as teachers, experts, or take on various roles. They enable automation and integration with other systems and workflows. For instance, LLMs can be integrated into customer service, and other examples are yet to be explored.
 
-Retrieval-Augmented Generation (RAG) combines LLMs with external knowledge retrieval to enhance their factual accuracy and knowledge coverage.
+\subsubsection{Building on LLMs}
+
+Large Language Models can be integrated into a wide range of
+tasks beyond chatbots in web browsers. Their versatility allows
+them to act as teachers, experts, and other roles, automating
+and enhancing various workflows.
+
+Examples of LLM integration include customer service,
+where LLMs can automate customer interactions by providing instant, accurate responses to inquiries,
+reducing wait times, and improving satisfaction. In healthcare, LLMs assist
+in diagnosing conditions by analyzing patient data and offering
+recommendations, thus enhancing decision-making and patient outcomes.
+In the field of education, personalized tutoring powered by LLMs
+can tailor learning experiences, helping students
+with homework and explaining complex concepts. LLMs also aid
+in content creation, generating marketing copy, blog posts,
+and scripts, streamlining the content creation process for
+writers and marketers.
+
+Retrieval-Augmented Generation (RAG) enhances LLMs by combining
+them with external knowledge retrieval. This technique retrieves relevant
+information from knowledge bases and uses it to generate accurate
+and contextually relevant responses. Applications of RAG include
+customer support, where it provides detailed, accurate responses
+by accessing product manuals and FAQs. In research, RAG synthesizes
+information from scientific literature for researchers.
+In legal assistance, RAG analyzes case law and statutes
+for legal professionals. \cite{gao2024retrievalaugmented}
+
+In summary, LLMs and RAG technology can revolutionize various fields by enhancing efficiency, accuracy, and knowledge coverage. As these technologies evolve, their applications will continue to expand, offering innovative solutions across different domains.
+
+
 
 \subsubsection{Summary}%TODO : add a summary
 
@@ -308,7 +400,7 @@ putting in the necessary effort or learning
 \cite{theweek_ai_schools}.
 A recent survey revealed that nearly half of students were likely
 to use AI tools like ChatGPT, while 60\% perceived reliance on
-such tools as cheating \cite{missouri2023chatgpt} .
+such tools as cheating \cite{missouri2023chatgpt}.
 
 The ease of use and accessibility of ChatGPT heightened concerns
 about the prevalence of academic dishonesty across all levels of
@@ -322,16 +414,16 @@ A Pew Research Center survey of U.S. teens, conducted between
 September and October 2023, revealed an interesting discrepancy
 in students' perceptions of AI usage. While approximately 60\%
 of students believe that using ChatGPT to write essays is unacceptable, around 70\%
-consider it acceptable to use the tool for researching new topics.
+consider it acceptable to use the tool for researching new topics (Figure \ref{fig:chatgpt_acceptable_usecases}).
 This finding suggests that students are more likely to view AI
 as an acceptable tool for exploration and learning rather than for
 completing actual assignments or assessments.
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{images/chatgpt_acceptable_usecases.png}
     \caption{Pew Research Center survey on AI use in education \cite{nytimes_chatbot_cheating}}
-    %TODO : better position in the text
+    \label{fig:chatgpt_acceptable_usecases}
 \end{figure}
 
 \subsection{Bans and Restrictions in Schools}
@@ -721,7 +813,7 @@ pace and provides simple explanations and real-time feedback
 to make learning efficient \cite{fordhamram_brilliant_review}.
 The platforms are accessible for all skill levels,
 from high school fundamentals to advanced topics
-\cite{fordhamram_brilliant_review} .
+\cite{fordhamram_brilliant_review}.
 
 Brilliant replaces traditional lecture videos with interactive
 lessons, daily challenges, and quizzes as part of the
@@ -1246,34 +1338,34 @@ teachers with advanced tools. These benefits can lead to more engaging,
 effective, and inclusive educational environments. For instance,
 AI-powered platforms can generate individualized learning paths, provide real-time feedback,
 and offer multilingual support, making education more accessible to diverse populations.
-    Additionally, AI can automate routine tasks, allowing teachers to focus
-     on more impactful activities like personalized instruction and mentoring.
+Additionally, AI can automate routine tasks, allowing teachers to focus
+on more impactful activities like personalized instruction and mentoring.
 
-However, the integration of AI also presents significant challenges, 
+However, the integration of AI also presents significant challenges,
 including potential impacts on essential skills development, equity
- in access to technology, environmental concerns, and privacy issues.
- The reliance on AI tools can undermine critical thinking, autonomy, 
- and creativity among students, and the disparity in access to premium 
- AI tools can exacerbate educational inequalities. Moreover, the environmental
-  impact of AI, with its high energy and water consumption, cannot be overlooked.
+in access to technology, environmental concerns, and privacy issues.
+The reliance on AI tools can undermine critical thinking, autonomy,
+and creativity among students, and the disparity in access to premium
+AI tools can exacerbate educational inequalities. Moreover, the environmental
+impact of AI, with its high energy and water consumption, cannot be overlooked.
 
 As AI continues to evolve, it is crucial for educators, policymakers,
- and researchers to collaborate in developing ethical guidelines, 
- equitable access, and sustainable practices. Continuous investment
-  in teacher training and the development of robust assessment methods 
-  will be essential to maximize the benefits while mitigating the risks. 
-  Governments and institutions should also invest in AI infrastructure 
-  and partnerships, and develop frameworks and guidelines to ensure the
-   safe, ethical, and effective use of AI in education.
+and researchers to collaborate in developing ethical guidelines,
+equitable access, and sustainable practices. Continuous investment
+in teacher training and the development of robust assessment methods
+will be essential to maximize the benefits while mitigating the risks.
+Governments and institutions should also invest in AI infrastructure
+and partnerships, and develop frameworks and guidelines to ensure the
+safe, ethical, and effective use of AI in education.
 
-It is imperative that we embrace the opportunities presented by AI 
-while actively addressing its challenges. By fostering innovation, 
-ensuring ethical practices, and promoting inclusive education, we 
+It is imperative that we embrace the opportunities presented by AI
+while actively addressing its challenges. By fostering innovation,
+ensuring ethical practices, and promoting inclusive education, we
 can harness the full potential of AI to create a brighter future
- for learners worldwide. As we stand on the brink of a new era in
-  education, the integration of AI offers unprecedented possibilities.
-   The question remains: how will we shape this future to benefit all 
-   students and educators?
+for learners worldwide. As we stand on the brink of a new era in
+education, the integration of AI offers unprecedented possibilities.
+The question remains: how will we shape this future to benefit all
+students and educators?
 
 
 
